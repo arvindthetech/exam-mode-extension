@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Mode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Exam Mode</h1>
+        
+        <label for="examUrl">Enter Exam Website:</label>
+        <input type="url" id="examUrl" placeholder="https://exam.com">
+
+        <label for="examDuration">Select Exam Duration:</label>
+        <select id="examDuration">
+            <option value="1">1 min</option>
+            <option value="15">15 min</option>
+            <option value="30">30 min</option>
+            <option value="60">1 hour</option>
+            <option value="90">1.5 hours</option>
+            <option value="120">2 hours</option>
+            <option value="180">3 hours</option>
+            <option value="210">3.5 hours</option>
+            <option value="240">4 hours</option>
+        </select>
+
+        <button id="startExam">Start Exam Mode</button>
+        <button id="exitExam" class="hidden">Exit Exam Mode</button>
+
+        <p id="countdown" class="hidden">Time Left: <span id="timeLeft"></span></p>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
+

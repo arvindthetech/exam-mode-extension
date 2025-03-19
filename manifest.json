@@ -1,0 +1,46 @@
+{
+    "manifest_version": 3,
+    "name": "Exam Mode",
+    "version": "1.0",
+    "description": "Creates a distraction-free exam environment by blocking all websites except the exam page.",
+    "permissions": [
+        "storage",
+        "tabs",
+        "declarativeNetRequest",
+        "alarms",
+        "notifications",
+        "windows",
+        "commands",
+        "scripting"
+    ],
+    "host_permissions": [
+        "<all_urls>",
+        "https://api.quotable.io/"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["start.mp3", "end.mp3"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "commands": {
+        "exit-exam-mode": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+E",
+                "mac": "Command+Shift+E"
+            },
+            "description": "Exit Exam Mode"
+        }
+    }
+}

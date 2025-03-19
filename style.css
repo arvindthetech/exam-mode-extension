@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1E3A8A;
+    color: white;
+    margin: 0;
+}
+
+.card {
+    background: transparent; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 90%;
+    max-width: 300px;
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#startExam {
+    background: #F97316;
+    color: white;
+}
+
+#exitExam {
+    background: red;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+#countdown {
+    font-size: 16px;
+    font-weight: bold; 
+} 
